@@ -68,130 +68,130 @@
       function initMap() {
         var windows = [];
         var npos = [];
-        var testData =
-          {
-"global_power_plant_database": [
-{
-		"country" : "USA",
-		"country_long" : "United States of America",
-		"name" : "Anderson Ranch",
-		"gppd_idnr" : "USA0006395",
-		"capacity_mw" : 40.0,
-		"latitude" : 43.3571,
-		"longitude" : -115.4515,
-		"fuel1" : "Hydro",
-		"fuel2" : "",
-		"fuel3" : "",
-		"fuel4" : "",
-		"commissioning_year" : 1951,
-		"owner" : "U S Bureau of Reclamation",
-		"source" : "U.S. Energy Information Administration",
-		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
-		"geolocation_source" : "U.S. Energy Information Administration",
-		"year_of_capacity_data" : 2016,
-		"generation_gwh_2013" : null,
-		"generation_gwh_2014" : null,
-		"generation_gwh_2015" : null,
-		"generation_gwh_2016" : 145.394,
-		"estimated_generation_gwh" : 111.51560524092878
-	},
-	{
-		"country" : "USA",
-		"country_long" : "United States of America",
-		"name" : "Anderson Regional Landfill",
-		"gppd_idnr" : "USA0056121",
-		"capacity_mw" : 3.2,
-		"latitude" : 34.5739,
-		"longitude" : -82.4621,
-		"fuel1" : "Waste",
-		"fuel2" : "",
-		"fuel3" : "",
-		"fuel4" : "",
-		"commissioning_year" : 2008,
-		"owner" : "South Carolina Public Service Authority",
-		"source" : "U.S. Energy Information Administration",
-		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
-		"geolocation_source" : "U.S. Energy Information Administration",
-		"year_of_capacity_data" : 2016,
-		"generation_gwh_2013" : null,
-		"generation_gwh_2014" : null,
-		"generation_gwh_2015" : null,
-		"generation_gwh_2016" : 9.44,
-		"estimated_generation_gwh" : 3.9963458099049136
-	},
-	{
-		"country" : "USA",
-		"country_long" : "United States of America",
-		"name" : "Anderson Wind I",
-		"gppd_idnr" : "USA0058939",
-		"capacity_mw" : 5.0,
-		"latitude" : 33.0294,
-		"longitude" : -103.8558,
-		"fuel1" : "Wind",
-		"fuel2" : "",
-		"fuel3" : "",
-		"fuel4" : "",
-		"commissioning_year" : 2015,
-		"owner" : "BayWa r.e Wind LLC",
-		"source" : "U.S. Energy Information Administration",
-		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
-		"geolocation_source" : "U.S. Energy Information Administration",
-		"year_of_capacity_data" : 2016,
-		"generation_gwh_2013" : null,
-		"generation_gwh_2014" : null,
-		"generation_gwh_2015" : null,
-		"generation_gwh_2016" : 17.782,
-		"estimated_generation_gwh" : 11.274164792666516
-	},
-	{
-		"country" : "USA",
-		"country_long" : "United States of America",
-		"name" : "Anderson Wind II",
-		"gppd_idnr" : "USA0058940",
-		"capacity_mw" : 10.0,
-		"latitude" : 33.0139,
-		"longitude" : -103.865,
-		"fuel1" : "Wind",
-		"fuel2" : "",
-		"fuel3" : "",
-		"fuel4" : "",
-		"commissioning_year" : 2015,
-		"owner" : "BayWa r.e Wind LLC",
-		"source" : "U.S. Energy Information Administration",
-		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
-		"geolocation_source" : "U.S. Energy Information Administration",
-		"year_of_capacity_data" : 2016,
-		"generation_gwh_2013" : null,
-		"generation_gwh_2014" : null,
-		"generation_gwh_2015" : null,
-		"generation_gwh_2016" : 40.666000000000004,
-		"estimated_generation_gwh" : 22.548329585333033
-	},
-	{
-		"country" : "USA",
-		"country_long" : "United States of America",
-		"name" : "Andrew Solar",
-		"gppd_idnr" : "USA0059497",
-		"capacity_mw" : 5.0,
-		"latitude" : 35.1608,
-		"longitude" : -77.1099,
-		"fuel1" : "Solar",
-		"fuel2" : "",
-		"fuel3" : "",
-		"fuel4" : "",
-		"commissioning_year" : 2016,
-		"owner" : "Cypress Creek Renewables",
-		"source" : "U.S. Energy Information Administration",
-		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
-		"geolocation_source" : "U.S. Energy Information Administration",
-		"year_of_capacity_data" : 2016,
-		"generation_gwh_2013" : null,
-		"generation_gwh_2014" : null,
-		"generation_gwh_2015" : null,
-		"generation_gwh_2016" : 9.942,
-		"estimated_generation_gwh" : 5.7611116184642155
-	}
-]};
+        var testData = {};
+//           {
+// "global_power_plant_database": [
+// {
+// 		"country" : "USA",
+// 		"country_long" : "United States of America",
+// 		"name" : "Anderson Ranch",
+// 		"gppd_idnr" : "USA0006395",
+// 		"capacity_mw" : 40.0,
+// 		"latitude" : 43.3571,
+// 		"longitude" : -115.4515,
+// 		"fuel1" : "Hydro",
+// 		"fuel2" : "",
+// 		"fuel3" : "",
+// 		"fuel4" : "",
+// 		"commissioning_year" : 1951,
+// 		"owner" : "U S Bureau of Reclamation",
+// 		"source" : "U.S. Energy Information Administration",
+// 		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
+// 		"geolocation_source" : "U.S. Energy Information Administration",
+// 		"year_of_capacity_data" : 2016,
+// 		"generation_gwh_2013" : null,
+// 		"generation_gwh_2014" : null,
+// 		"generation_gwh_2015" : null,
+// 		"generation_gwh_2016" : 145.394,
+// 		"estimated_generation_gwh" : 111.51560524092878
+// 	},
+// 	{
+// 		"country" : "USA",
+// 		"country_long" : "United States of America",
+// 		"name" : "Anderson Regional Landfill",
+// 		"gppd_idnr" : "USA0056121",
+// 		"capacity_mw" : 3.2,
+// 		"latitude" : 34.5739,
+// 		"longitude" : -82.4621,
+// 		"fuel1" : "Waste",
+// 		"fuel2" : "",
+// 		"fuel3" : "",
+// 		"fuel4" : "",
+// 		"commissioning_year" : 2008,
+// 		"owner" : "South Carolina Public Service Authority",
+// 		"source" : "U.S. Energy Information Administration",
+// 		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
+// 		"geolocation_source" : "U.S. Energy Information Administration",
+// 		"year_of_capacity_data" : 2016,
+// 		"generation_gwh_2013" : null,
+// 		"generation_gwh_2014" : null,
+// 		"generation_gwh_2015" : null,
+// 		"generation_gwh_2016" : 9.44,
+// 		"estimated_generation_gwh" : 3.9963458099049136
+// 	},
+// 	{
+// 		"country" : "USA",
+// 		"country_long" : "United States of America",
+// 		"name" : "Anderson Wind I",
+// 		"gppd_idnr" : "USA0058939",
+// 		"capacity_mw" : 5.0,
+// 		"latitude" : 33.0294,
+// 		"longitude" : -103.8558,
+// 		"fuel1" : "Wind",
+// 		"fuel2" : "",
+// 		"fuel3" : "",
+// 		"fuel4" : "",
+// 		"commissioning_year" : 2015,
+// 		"owner" : "BayWa r.e Wind LLC",
+// 		"source" : "U.S. Energy Information Administration",
+// 		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
+// 		"geolocation_source" : "U.S. Energy Information Administration",
+// 		"year_of_capacity_data" : 2016,
+// 		"generation_gwh_2013" : null,
+// 		"generation_gwh_2014" : null,
+// 		"generation_gwh_2015" : null,
+// 		"generation_gwh_2016" : 17.782,
+// 		"estimated_generation_gwh" : 11.274164792666516
+// 	},
+// 	{
+// 		"country" : "USA",
+// 		"country_long" : "United States of America",
+// 		"name" : "Anderson Wind II",
+// 		"gppd_idnr" : "USA0058940",
+// 		"capacity_mw" : 10.0,
+// 		"latitude" : 33.0139,
+// 		"longitude" : -103.865,
+// 		"fuel1" : "Wind",
+// 		"fuel2" : "",
+// 		"fuel3" : "",
+// 		"fuel4" : "",
+// 		"commissioning_year" : 2015,
+// 		"owner" : "BayWa r.e Wind LLC",
+// 		"source" : "U.S. Energy Information Administration",
+// 		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
+// 		"geolocation_source" : "U.S. Energy Information Administration",
+// 		"year_of_capacity_data" : 2016,
+// 		"generation_gwh_2013" : null,
+// 		"generation_gwh_2014" : null,
+// 		"generation_gwh_2015" : null,
+// 		"generation_gwh_2016" : 40.666000000000004,
+// 		"estimated_generation_gwh" : 22.548329585333033
+// 	},
+// 	{
+// 		"country" : "USA",
+// 		"country_long" : "United States of America",
+// 		"name" : "Andrew Solar",
+// 		"gppd_idnr" : "USA0059497",
+// 		"capacity_mw" : 5.0,
+// 		"latitude" : 35.1608,
+// 		"longitude" : -77.1099,
+// 		"fuel1" : "Solar",
+// 		"fuel2" : "",
+// 		"fuel3" : "",
+// 		"fuel4" : "",
+// 		"commissioning_year" : 2016,
+// 		"owner" : "Cypress Creek Renewables",
+// 		"source" : "U.S. Energy Information Administration",
+// 		"url" : "http:\/\/www.eia.gov\/electricity\/data\/browser\/",
+// 		"geolocation_source" : "U.S. Energy Information Administration",
+// 		"year_of_capacity_data" : 2016,
+// 		"generation_gwh_2013" : null,
+// 		"generation_gwh_2014" : null,
+// 		"generation_gwh_2015" : null,
+// 		"generation_gwh_2016" : 9.942,
+// 		"estimated_generation_gwh" : 5.7611116184642155
+// 	}
+// ]};
         var chicago = new google.maps.LatLng(41.850, -87.650);
         let info = null;
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -211,24 +211,35 @@
            map.setCenter(newcenter);
            console.log(pos.lat);
            console.log(pos.lng);
-           const URL = 'http://jsonplaceholder.typicode.com/posts';
-           const params = {
-             name: "Said" ,
-             id:21
-           }
+           // const URL = 'http://jsonplaceholder.typicode.com/posts';
+           // const params = {
+           //   : "Said" ,
+           //   id:21
+           // }
+          const URL = 'http://localhost:8080/' + pos.lat + "," + pos.lng;
            //var jsonData = JSON.parse(testData);
-           for (var i = 0; i < testData.global_power_plant_database.length; i++) {
-             var counter = testData.global_power_plant_database[i];
-             console.log(counter.name);
-             windows[i] = new google.maps.InfoWindow();
-             npos[i] = new google.maps.LatLng(counter.latitude, counter.longitude);
-             windows[i].setContent(createInfoWindowContent(npos[i], map.getZoom(), counter));
-             windows[i].setPosition(npos[i]);
-             windows[i].open(map);
-           }
+           // for (var i = 0; i < testData.global_power_plant_database.length; i++) {
+           //   var counter = testData.global_power_plant_database[i];
+           //   console.log(counter.name);
+           //   windows[i] = new google.maps.InfoWindow();
+           //   npos[i] = new google.maps.LatLng(counter.latitude, counter.longitude);
+           //   windows[i].setContent(createInfoWindowContent(npos[i], map.getZoom(), counter));
+           //   windows[i].setPosition(npos[i]);
+           //   windows[i].open(map);
+           // }
            var coordInfoWindow;
-           axios.get(URL, params)
+           axios.get(URL)
            .then(data=> {
+             testData = data;
+             for (var i = 0; i < testData.data.length; i++) {
+               var counter = testData.data[i];
+               console.log(counter.name);
+               windows[i] = new google.maps.InfoWindow();
+               npos[i] = new google.maps.LatLng(counter.latitude, counter.longitude);
+               windows[i].setContent(createInfoWindowContent(npos[i], map.getZoom(), counter));
+               windows[i].setPosition(npos[i]);
+               windows[i].open(map);
+             }
            //   let info = data;
            //   //let test;
            //   console.log(createInfoWindowContent(chicago, map.getZoom(), info));
@@ -256,16 +267,18 @@
 
 
         map.addListener('zoom_changed', function() {
-          for (var i = 0; i < testData.global_power_plant_database.length; i++) {
-            var counter = testData.global_power_plant_database[i];
-            console.log(counter.name);
-            windows[i] = new google.maps.InfoWindow();
-            npos[i] = new google.maps.LatLng(counter.latitude, counter.longitude);
-            windows[i].setContent(createInfoWindowContent(npos[i], map.getZoom(), counter));
-            windows[i].setPosition(npos[i]);
-            windows[i].open(map);
-          }
-        });
+          if(testData.length > 0){
+            for (var i = 0; i < testData.data.length; i++) {
+              var counter = testData.data[i];
+              console.log(counter.name);
+              windows[i] = new google.maps.InfoWindow();
+              npos[i] = new google.maps.LatLng(counter.latitude, counter.longitude);
+              windows[i].setContent(createInfoWindowContent(npos[i], map.getZoom(), counter));
+              windows[i].setPosition(npos[i]);
+              windows[i].open(map);
+            }
+          });
+        };
       }
 
       var TILE_SIZE = 256;
