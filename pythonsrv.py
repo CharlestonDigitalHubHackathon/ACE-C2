@@ -15,31 +15,14 @@ serverPort = 8080
 class MyServer(BaseHTTPRequestHandler):
 
     def distance(self,lat1, lon1, lat2, lon2):
-        print("WHAT THE HELL")
-        print("HERE ARE SOME MOTHERFUCKING NUMBERS",lat1,lat2,lon1,lon2)
         p = math.pi/180     #Pi/180
-        print("IS IT U")
-
-        # # p1 = cos((lat2 - lat1) * p)/2
-        # print ("OR U")
-
-        # p2 = math.cos(lat1 * p)
-        # print("OR IT U")
-
-        # p3 = math.cos(lat2 * p)
-        # print("MAYBE U")
-
-        # p4 = (1 - cos((lon2 - lon1) * p))
-        # print("OR THEM")
 
         a = 0.5 - math.cos((lat2 - float(lat1) * p)/2 + math.cos(float(lat1) * p) * math.cos(lat2 * p) * (1 - math.cos((lon2 - float(lon1)) * p))) / 2
-        print ("WHO THE HELL")
         return 12742 * math.asin(math.sqrt(a)) #2*R*asin...
 
 
     def findClose(self,inLat, inLong):
         dictD = json.loads(codecs.open('gpdmini.json', 'r', 'utf-8-sig').read())
-        print( "IM A FUCKING BUTTERFLY")
         distanceDict = {}
         # keep array of top N values
         # calculate the distance from each value in array
@@ -49,15 +32,8 @@ class MyServer(BaseHTTPRequestHandler):
         # THANK SALVADOR DALI ON https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula
 
         for plant in dictD["global_power_plant_database"]:
-            print("Processing distances")
-            print(plant)
-            print(plant["latitude"])
-            print(plant["longitude"])
             plantDistance = self.distance(inLat,inLong,float(plant["latitude"]),float(plant["longitude"]))
-            print("Made a distance")
             distanceDict[dictD["global_power_plant_database"].index(plant)] = abs(plantDistance)
-            print("processed distance")
-            #print(plantDistance)
             if len(distanceDict) > 3:
                     drop = max(distanceDict,key=distanceDict.get)
                     distanceDict.pop(drop)
@@ -96,7 +72,6 @@ class MyServer(BaseHTTPRequestHandler):
         # print("Doctored string to ",drrs)
         # print(drrs.split(','))
         # print('Will pass in ',drrs.split()[0],drrs.split()[1])
-        print(self.findClose(arr[0],arr[1]))
         self.wfile.write(self.findClose(arr[0],arr[1]).encode())
 
 
